@@ -1,8 +1,22 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# React native modular app
+
+A simple react-native boilerplate with to kickstart a mobile application. Clone this repo to use the following features.
+
+## Features
+
+- Built in typescript
+- Simple directory architecture
+- A reusable Text component with a default font-family
+- Customisable color palette
+- A Spacer component for which can be used to apply blank spaces between components instead of margin (or padding).
+- Scale method makes the App look great on different screen sizes, different devices, based on your device's pixel ratio.
+- A default Stack Navigation has been used.
+
+More features will be added soon.
 
 # Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
 ## Step 1: Start the Metro Server
 
