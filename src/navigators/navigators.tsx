@@ -3,13 +3,15 @@ import {
   createNativeStackNavigator,
   NativeStackNavigationProp,
 } from '@react-navigation/native-stack';
-import { HomeScreen } from '@screens/HomeScreen';
-import { SettingsScreen } from '@screens/SettingsScreen';
+import { HomeScreen } from '@screens/Home/HomeScreen';
+import { SettingsScreen } from '@screens/Settings/SettingsScreen';
+import { UsersScreen } from '@screens/Users/UsersScreen';
 import * as React from 'react';
 
 type StackParamList = {
   Home: undefined;
   Settings: { theme: string }; // Example of a screen that expects parameters
+  Users: undefined;
 };
 
 interface ScreenConfigType {
@@ -31,7 +33,8 @@ const Navigators = (): React.JSX.Element => {
 
   const screenConfig: ScreenConfigType[] = [
     { name: 'Home', component: HomeScreen },
-    { name: 'Settings', component: SettingsScreen },
+    { name: 'Settings', component: SettingsScreen }, // Example of a screen without a component
+    { name: 'Users', component: UsersScreen },
   ];
 
   return (

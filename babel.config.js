@@ -17,7 +17,7 @@ module.exports = {
           '@navigators': './src/navigators',
           '@contexts': './src/contexts',
           '@theme': './src/theme',
-          '@types': './src/types',
+          '@typings': './src/typings',
         },
       },
     ],

@@ -1,4 +1,4 @@
-import { DefaultScreenProps } from 'navigators/navigators';
+import { DefaultScreenProps } from '@navigators/navigators';
 import React from 'react';
 import { Text, View } from 'react-native';
 

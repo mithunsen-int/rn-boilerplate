@@ -1,4 +1,4 @@
-import { _COLORS, _TYPO } from '@/constants/index';
+import { _COLORS, _TYPO } from '@constants/index';
 import React, { JSX } from 'react';
 import { StyleSheet, Text, TextProps, TextStyle } from 'react-native';
 
