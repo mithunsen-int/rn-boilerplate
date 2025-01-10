@@ -1,27 +1,14 @@
-import { RouteProp } from '@react-navigation/native';
-import {
-  createNativeStackNavigator,
-  NativeStackNavigationProp,
-} from '@react-navigation/native-stack';
-import { HomeScreen } from '@screens/Home/HomeScreen';
-import { SettingsScreen } from '@screens/Settings/SettingsScreen';
-import { UsersScreen } from '@screens/Users/UsersScreen';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { HomeScreen } from '@screens/post-auth/Home/HomeScreen';
+import { SettingsScreen } from '@screens/post-auth/Settings/SettingsScreen';
+import { UsersScreen } from '@screens/post-auth/Users/UsersScreen';
+import { ScreenConfigType } from '@typings/core/navigators';
 import * as React from 'react';
 
-type StackParamList = {
+export type StackParamList = {
   Home: undefined;
   Settings: { theme: string }; // Example of a screen that expects parameters
   Users: undefined;
-};
-
-interface ScreenConfigType {
-  name: keyof StackParamList; // Name of the screen
-  component: React.FC<any>; // Component to render for the screen
-}
-
-export type DefaultScreenProps<T extends keyof StackParamList> = {
-  navigation: NativeStackNavigationProp<StackParamList, T>; // Navigation prop for the screen
-  route: RouteProp<StackParamList, T>; // Route prop for the screen
 };
 
 /**

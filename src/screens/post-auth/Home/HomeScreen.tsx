@@ -1,5 +1,5 @@
 import { _COLORS } from '@constants/index';
-import { DefaultScreenProps } from '@navigators/navigators';
+import { DefaultScreenProps } from '@typings/core/navigators';
 import React, { PropsWithChildren } from 'react';
 import {
   Pressable,
